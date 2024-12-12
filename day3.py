@@ -26,12 +26,9 @@ def part2(data: str) -> int:
 
 
 if __name__ == "__main__":
-    data = None
+    from run import run
 
     data = open("data/day3.txt").read()
 
-    result1 = part1(data)
-    result2 = part2(data)
-
-    print(f"Part 1: {result1}")
-    print(f"Part 2: {result2}")
+    run(part1, data)
+    run(part2, data)

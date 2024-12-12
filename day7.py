@@ -50,6 +50,7 @@ def part2(data: str) -> int:
 
 
 if __name__ == "__main__":
+    from run import run
     from testing import test
 
     test_data = open("data/test7.txt").read()
@@ -58,7 +59,5 @@ if __name__ == "__main__":
     test(part1, data=test_data, expected=3749)
     test(part2, data=test_data, expected=11387)
 
-    result1 = part1(data)
-    print(f"Part 1: {result1}")
-    result2 = part2(data)
-    print(f"Part 2: {result2}")
+    run(part1, data)
+    run(part2, data)
